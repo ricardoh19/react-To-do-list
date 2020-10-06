@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import Todos from './components/todos';
 import Navbars from './components/navbars';
-import InputBar from './components/inputbar'
-import "bootstrap/dist/css/bootstrap.css"
+import InputBar from './components/inputbar';
+import "bootstrap/dist/css/bootstrap.css";
 import {v4 as uuid} from 'uuid';
+
+
+
 
 class App extends Component {
   state = {
@@ -18,13 +21,13 @@ class App extends Component {
   } 
   render() { 
     return ( 
-        <React.Fragment>
-          <Navbars />
-          <main className="container">
-              <InputBar addTodo={this.addTodo} />
-              <Todos todos={this.state.todos} onDelete={this.handleDelete} onEdit={this.handleEdit}/>
-          </main>
-        </React.Fragment>
+              <React.Fragment>
+                  <Navbars />
+                  <main className="container">
+                      <InputBar addTodo={this.addTodo} />
+                      <Todos todos={this.state.todos} onDelete={this.handleDelete} onEdit={this.handleEdit}/>
+                  </main>
+              </React.Fragment>
      );
   }
   // delete item

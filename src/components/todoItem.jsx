@@ -20,7 +20,6 @@ class TodoItem extends Component {
                 <p>{this.props.todo.title}</p>
                 <p>{this.props.todo.date}</p>
                 <button className="btn btn-danger" style={deleteStyle} onClick={() => this.props.onDelete(this.props.todo.id)}>Delete</button>
-                <button className="btn btn-success" onClick={this.props.onEdit}>Edit</button>
             </div>
          );
     }

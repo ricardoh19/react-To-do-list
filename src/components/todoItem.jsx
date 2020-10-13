@@ -7,8 +7,9 @@ class TodoItem extends Component {
         return {
             background: '#f4f4f4',
             padding: '10px',
-            borderBottom: '1px #ccc dotted',
-            textDecoration: this.props.todo.completed ? 'line-through': 'none'
+            border: '3px #ccc dotted',
+            textDecoration: this.props.todo.completed ? 'line-through': 'none',
+
             }
     
     }
@@ -27,8 +28,7 @@ class TodoItem extends Component {
 }
 
 const deleteStyle = {
-    float: "right",
-    padding: "5px 10px"
+   
 }
  
 export default TodoItem;
